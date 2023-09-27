@@ -2,14 +2,10 @@
 
 (define deps '("base"))
 
-(define selection #(0 0 255))
 (define comment #(164	98 114))
 
-(define yellow #(247 216 123))
 (define green #(68 171 51))
-(define purple #(129 118 154))
 (define pink #(254 189 221))
-(define cyan #(82 178 167))
 
 (define white #(255 255 255))
 (define red #(238 0 9))
@@ -24,6 +20,8 @@
 (define light #(205 200 176))
 (define lighter #(246 242 225))
 
+(define azur #(59 169 159))
+
 (define framework:color-schemes
   `(#hash((name . "Automata")
           (white-on-black-base? . #t)
@@ -31,19 +29,19 @@
            .
            ((framework:basic-canvas-background                 ,too-dark )
             (framework:default-text-color                      ,light)
-            (framework:paren-match-color                       ,selection)
-            (framework:misspelled-text-color                   ,red)
+            (framework:paren-match-color                       ,too-dark-but-lighter)
+            (framework:misspelled-text-color                   ,ball-red)
             ;; Syntax checks
-            (drracket:syncheck:template-arrow                  ,cyan)
-            (drracket:syncheck:tail-arrow                      ,cyan)
-            (drracket:syncheck:var-arrow                       ,cyan)
+            (drracket:syncheck:template-arrow                  ,azur)
+            (drracket:syncheck:tail-arrow                      ,azur)
+            (drracket:syncheck:var-arrow                       ,azur)
             (drracket:syncheck:unused-identifier               ,comment)
             (drracket:syncheck:untacked                        ,comment)
-            (drracket:syncheck:document-identifier             ,selection)
-            (drracket:syncheck:matching-identifiers            ,selection)
+            (drracket:syncheck:document-identifier             ,darkest)
+            (drracket:syncheck:matching-identifiers            ,darkest)
             ;; Color scheme
-            (framework:syntax-color:scheme:comment             ,too-dark)
-            (framework:syntax-color:scheme:text                ,cyan)
+            (framework:syntax-color:scheme:comment             ,darkest bold)
+            (framework:syntax-color:scheme:text                ,azur)
             (framework:syntax-color:scheme:string              ,orange)
             (framework:syntax-color:scheme:constant            ,orange)
             (framework:syntax-color:scheme:keyword             ,white bold)
@@ -51,7 +49,7 @@
             (framework:syntax-color:scheme:parenthesis         ,white)
             (framework:syntax-color:scheme:error               ,ball-red)
             (framework:syntax-color:scheme:symbol              ,light)
-            (framework:syntax-color:scheme:other               ,pink)
+            (framework:syntax-color:scheme:other               ,azur)
 
             ;; DrRacket colors
             (drracket:check-syntax:both-obligation-style-pref  ,orange)
@@ -63,6 +61,6 @@
             (drracket:check-syntax:their-obligation-style-pref ,pink)
             (drracket:check-syntax:unk-obligation-style-pref   ,pink)
             (drracket:check-syntax:unused-require              ,comment)
-            (drracket:read-eval-print-loop:error-color         ,red)
-            (drracket:read-eval-print-loop:out-color           ,yellow)
-            (drracket:read-eval-print-loop:value-color         ,purple))))))
+            (drracket:read-eval-print-loop:error-color         ,ball-red)
+            (drracket:read-eval-print-loop:out-color           ,light)
+            (drracket:read-eval-print-loop:value-color         ,light))))))
