@@ -10,6 +10,8 @@
 (define white #(255 255 255))
 (define red #(238 0 9))
 (define ball-red #(252 96 119))
+(define ball-red-dark #(107 79 84))
+(define ball-red-pink #(152 110 143))
 (define orange #(205 102 77))
 
 (define darkest #(19 18 14))
@@ -29,7 +31,7 @@
            .
            ((framework:basic-canvas-background                 ,too-dark )
             (framework:default-text-color                      ,light)
-            (framework:paren-match-color                       ,too-dark-but-lighter)
+            (framework:paren-match-color                       ,mid)
             (framework:misspelled-text-color                   ,ball-red)
             ;; Syntax checks
             (drracket:syncheck:template-arrow                  ,azur)
@@ -40,16 +42,16 @@
             (drracket:syncheck:document-identifier             ,darkest)
             (drracket:syncheck:matching-identifiers            ,darkest)
             ;; Color scheme
-            (framework:syntax-color:scheme:comment             ,darkest bold)
+            (framework:syntax-color:scheme:comment             ,ball-red-pink italic)
             (framework:syntax-color:scheme:text                ,azur)
             (framework:syntax-color:scheme:string              ,orange)
             (framework:syntax-color:scheme:constant            ,orange)
-            (framework:syntax-color:scheme:keyword             ,white bold)
+            (framework:syntax-color:scheme:keyword             ,lighter bold)
             (framework:syntax-color:scheme:hash-colon-keyword  ,orange italic)
-            (framework:syntax-color:scheme:parenthesis         ,white)
+            (framework:syntax-color:scheme:parenthesis         ,lighter)
             (framework:syntax-color:scheme:error               ,ball-red)
             (framework:syntax-color:scheme:symbol              ,light)
-            (framework:syntax-color:scheme:other               ,azur)
+            (framework:syntax-color:scheme:other               ,lighter bold)
 
             ;; DrRacket colors
             (drracket:check-syntax:both-obligation-style-pref  ,orange)
