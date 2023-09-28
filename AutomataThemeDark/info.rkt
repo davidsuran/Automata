@@ -25,7 +25,7 @@
 (define azur #(59 169 159))
 
 (define framework:color-schemes
-  `(#hash((name . "Automata")
+  `(#hash((name . "Automata-Theme-Dark")
           (white-on-black-base? . #t)
           (colors
            .

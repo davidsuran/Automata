@@ -2,4 +2,5 @@
 
 Racket theme
 
-![theme image](theme.png?raw=true)
+![theme-light image](AutomataThemeLight/theme.png?raw=true)
+![theme-dark image](AutomataThemeDark/theme.png?raw=true)

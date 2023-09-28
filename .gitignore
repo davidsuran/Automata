@@ -363,3 +363,5 @@ MigrationBackup/
 FodyWeavers.xsd
 /compiled
 *.bak
+/AutomataThemeDark/compiled
+/AutomataThemeLight/compiled
